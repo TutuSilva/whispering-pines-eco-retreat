@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/normalize.css" />
+    <link rel="stylesheet" href="estilos/flexbox.css" />
+    <link rel="stylesheet" href="estilos/styles.css" />
+    <title>Whispering Pines Eco Retreat</title>
+  </head>
+  <body>
+    <!-- sessao do background principal  -->
+    <div class="background__container">
+      <!-- sessao cabecalho  -->
+      <header class="cabecalho__container">
+        <nav class="navegacao__items">
+          <a class="navegacao__links" href="">
+            <img
+              src="media/logowebiste/arvore-de-natal.png"
+              alt="Arvore de natal logo branco"
+          /></a>
+        </nav>
+        <!--Sessao do menu hamborguinho-->
+        <div class="menu__hamburguer__container">
+          <input
+            type="checkbox"
+            id="checkbox__menuhamburguer"
+            onclick="hamborguinho()"
+          />
+          <label for="checkbox__menuhamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div id="menuzinho__items">
+            <nav class="navegacao__items">
+              <a class="navegacao__links" href="">ABOUT US</a>
+            </nav>
+            <nav class="navegacao__items">
+              <a class="navegacao__links" href="">EXPLORE</a>
+            </nav>
+            <nav class="navegacao__items">
+              <a class="navegacao__links" href="">JOURNAL</a>
+            </nav>
+            <nav class="navegacao__items">
+              <a class="navegacao__links" href="">SEARCH</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- sessao titulo e texto  -->
+      <section class="titulosite__container">
+        <h1 class="titulosite__item">Whispering Pines Eco Retreat</h1>
+        <p class="subtitulosite__item">
+          It's better with eco.
+        </p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

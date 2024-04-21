@@ -1,0 +1,101 @@
+@font-face {
+  font-family: Spartan-Light;
+  src: url(../fonts/Spartan-Light.ttf);
+}
+@font-face {
+  font-family: Spartan-Regular;
+  src: url(../fonts/Spartan-Regular.ttf);
+}
+:root {
+  --fonte--nav: Spartan-Light;
+  --fonte--titulo: Spartan-Regular;
+
+  --cor--padrao: #f6f6f6;
+}
+.background__container {
+  background-image: url(../media/backgroundheader/34742cd2daad1a9b1854ab7448be75f7.jpg);
+  height: 50vh;
+}
+/* sessao cabecalho  */
+.cabecalho__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+.navegacao__links {
+  font-family: var(--fonte--nav);
+  text-decoration: none;
+  color: var(--cor--padrao);
+}
+.navegacao__links img {
+  width: 30px;
+}
+
+/* menu hamburguer  */
+.menu__hamburguer__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#menuzinho__items {
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.479);
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 5px;
+  text-align: center;
+  display: none;
+}
+#checkbox__menuhamburguer {
+  position: absolute;
+  opacity: 0;
+}
+label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 30px;
+}
+label span {
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+  background-color: black;
+  transition: 0.25s ease-in-out;
+}
+label span:nth-child(1) {
+  top: 0;
+}
+label span:nth-child(2) {
+  top: 8px;
+}
+label span:nth-child(3) {
+  top: 16px;
+}
+#checkbox__menuhamburguer:checked + label span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+#checkbox__menuhamburguer:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+#checkbox__menuhamburguer:checked + label span:nth-child(3) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+.titulosite__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--fonte--titulo);
+    color: var(--cor--padrao);
+    text-shadow: 3px 2px 4px rgba(0,0,0,0.42);
+}
