@@ -6,14 +6,25 @@
   font-family: Spartan-Regular;
   src: url(../fonts/Spartan-Regular.ttf);
 }
+@font-face {
+  font-family: Spartan-Medium;
+  src: url(../fonts/Spartan-Medium.ttf);
+}
 :root {
   --fonte--nav: Spartan-Light;
+  --fonte--paragrafo: Spartan-Medium;
   --fonte--titulo: Spartan-Regular;
+
+  --peso--paragrafo: 100;
+
+  --distancia--linha--paragrafo: 2rem;
 
   --cor--padrao: #f6f6f6;
   --cor--body: #000000;
 }
 body {
+  width: 100%;
+  height: 100%;
   background-color: var(--cor--body);
 }
 .background__container {
@@ -96,3 +107,54 @@ label span:nth-child(3) {
   text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.42);
 }
 
+/* apresentacao  */
+.textos__apresentacao {
+  color: var(--cor--padrao);
+  text-align: center;
+  padding: 1%;
+}
+.textos__subtitulo {
+  font-family: var(--fonte--titulo);
+}
+.textos__paragrafos {
+  font-family: var(--fonte--paragrafo);
+  font-weight: var(--peso--paragrafo);
+  line-height: var(--distancia--linha--paragrafo);
+}
+.fotos__apresentacao{
+  width: 95%;
+  border-radius: 7px;
+}
+.fotos__efeito{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.overlay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  width: 95%;
+  height: 100%;
+  opacity: 0;
+  color: white;
+  text-align: center;
+}
+.overlay h3{
+  font-family: var(--fonte--titulo);
+}
+.overlay p{
+  font-family: var(--fonte--paragrafo);
+  padding: 1%;
+  line-height: var(--distancia--linha--paragrafo);
+}
+.overlay:hover{
+  opacity: 0.6;
+  transition: 0.5s;
+}

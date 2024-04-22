@@ -29,6 +29,13 @@
   text-align: center;
 }
 
+/* apresentacao  */
+.imagens__apresentacao__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 
 /* telas grandes  */
 @media screen and (min-width: 1200px) {
