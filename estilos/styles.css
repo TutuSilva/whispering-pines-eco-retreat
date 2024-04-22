@@ -33,7 +33,7 @@ body {
   text-decoration: none;
   color: var(--cor--padrao);
 }
-.cabecalho__desktop__container{
+.cabecalho__desktop__container {
   display: none;
 }
 /* menu hamburguer  */
@@ -95,3 +95,4 @@ label span:nth-child(3) {
   color: var(--cor--padrao);
   text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.42);
 }
+
