@@ -11,35 +11,33 @@
   --fonte--titulo: Spartan-Regular;
 
   --cor--padrao: #f6f6f6;
+  --cor--body: #000000;
+}
+body {
+  background-color: var(--cor--body);
 }
 .background__container {
-  background-image: url(../media/backgroundheader/34742cd2daad1a9b1854ab7448be75f7.jpg);
-  height: 50vh;
+  background-image: url(../media/backgroundheader/4kforestbackgound.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px 0px, rgba(0, 0, 0, 0.09) 0px 4px 2px 0px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px 0px, rgba(0, 0, 0, 0.09) 0px 16px 8px 0px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px 0px;
 }
-/* sessao cabecalho  */
-.cabecalho__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5%;
-}
+/*sessao cabecalho  */
 .navegacao__links {
   font-family: var(--fonte--nav);
   text-decoration: none;
   color: var(--cor--padrao);
 }
-.navegacao__links img {
-  width: 30px;
+.cabecalho__desktop__container{
+  display: none;
 }
-
 /* menu hamburguer  */
-.menu__hamburguer__container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+
 #menuzinho__items {
   gap: 20px;
   background-color: rgba(0, 0, 0, 0.479);
@@ -66,7 +64,8 @@ label span {
   height: 5px;
   width: 100%;
   border-radius: 30px;
-  background-color: black;
+  background-color: var(--cor--padrao);
+  border: 1px solid rgba(0, 0, 0, 0.295);
   transition: 0.25s ease-in-out;
 }
 label span:nth-child(1) {
@@ -89,13 +88,10 @@ label span:nth-child(3) {
   transform: rotate(45deg);
   top: 8px;
 }
-.titulosite__container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: var(--fonte--titulo);
-    color: var(--cor--padrao);
-    text-shadow: 3px 2px 4px rgba(0,0,0,0.42);
+
+/* sessao titulo e texto */
+.titulosite__container {
+  font-family: var(--fonte--titulo);
+  color: var(--cor--padrao);
+  text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.42);
 }

@@ -1,0 +1,41 @@
+/* sessao cabecalho  */
+.cabecalho__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5% 0 5%;
+}
+
+.navegacao__links img {
+  width: 30px;
+}
+
+/* menu hamburguer  */
+.menu__hamburguer__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* sessao titulo e texto */
+
+.titulosite__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* telas grandes  */
+@media (min-width: 1200px) {
+  .background__container {
+    background-position: center center;
+  }
+  .cabecalho__desktop__container{
+    display: block;
+  }
+
+}
