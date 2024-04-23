@@ -52,7 +52,7 @@
   position: absolute;
   top: 0;
   background-color: rgb(0, 0, 0);
-  width: 95%;
+  width: 80%;
   height: 100%;
   opacity: 0;
   color: white;
@@ -63,7 +63,17 @@
   /* background header  */
   .background__container {
     background-position: center center;
-    height: 30vh;
+  }
+  /* apresentacao  */
+  .apresentacao__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .textos__apresentacao {
+    width: 90%;
   }
   /* fotos da apresentacao  */
   .fotos__apresentacao {
@@ -107,16 +117,18 @@
     display: flex;
     flex-direction: column;
     width: 70%;
+    padding-bottom: 2%;
   }
   .imagens__apresentacao__container {
     display: flex;
     flex-direction: row;
     gap: 0px;
   }
-  .overlay{
+  .overlay {
     overflow: scroll;
   }
-  .overlay h3, p{
+  .overlay h3,
+  p {
     padding: 0;
     margin: 0;
   }
