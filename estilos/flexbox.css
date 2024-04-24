@@ -59,13 +59,36 @@
   text-align: center;
 }
 
-
 /* sessão Journal */
 .imagens__journal__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+
+.semioverlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.514);
+  width: 90%;
+  color: white;
+  text-align: center;
+}
+.semioverlay p {
+  padding: 0;
+  margin: 0;
+}
+
+.semioverlay:hover .texto__escondido__overlay {
+  display: block;
+  opacity: 0.6;
+  transition: 0.5s;
+  overflow: scroll;
 }
 /* Medium screens (tablets) */
 @media (min-width: 768px) {
@@ -91,6 +114,17 @@
   .overlay {
     width: 60%;
   }
+
+  /* sessão Journal */
+  .fotos__journal {
+    width: 65%;
+  }
+  .semioverlay {
+    width: 65%;
+  }
+  .semioverlay:hover .texto__escondido__overlay {
+    overflow: hidden;
+  }
 }
 
 /* telas grandes  */
@@ -98,7 +132,7 @@
   /* background header  */
   .background__container {
     background-position: center center;
-    height: 40vh;
+    height: 50vh;
   }
   /* cabecalho  */
   .cabecalho__container {
@@ -120,25 +154,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
   }
   .textos__apresentacao {
     display: flex;
     flex-direction: column;
     width: 70%;
-    padding-bottom: 2%;
+    padding: 8vh;
   }
   .imagens__apresentacao__container {
     display: flex;
     flex-direction: row;
     gap: 0px;
+    width: 85%;
   }
+
   .overlay {
-    overflow: scroll;
+    overflow: hidden;
   }
   .overlay h3,
   p {
     padding: 0;
     margin: 0;
+  }
+  /* sessao journal  */
+  .journal__textos {
+    padding: 8vh;
+  }
+  .imagens__journal__container {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+  }
+  .fotos__journal, .semioverlay  {
+    width: 50%;
   }
 }
