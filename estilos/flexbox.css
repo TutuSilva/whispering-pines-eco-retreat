@@ -58,6 +58,15 @@
   color: white;
   text-align: center;
 }
+
+
+/* sessão Journal */
+.imagens__journal__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 /* Medium screens (tablets) */
 @media (min-width: 768px) {
   /* background header  */

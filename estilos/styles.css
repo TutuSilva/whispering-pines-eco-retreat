@@ -121,19 +121,30 @@ label span:nth-child(3) {
   font-weight: var(--peso--paragrafo);
   line-height: var(--distancia--linha--paragrafo);
 }
-.fotos__apresentacao{
+.fotos__apresentacao {
   width: 80%;
   border-radius: 7px;
 }
-.overlay h3{
+.overlay h3 {
   font-family: var(--fonte--titulo);
 }
-.overlay p{
+.overlay p {
   font-family: var(--fonte--paragrafo);
   padding: 1%;
   line-height: var(--distancia--linha--paragrafo);
 }
-.overlay:hover{
+.overlay:hover {
   opacity: 0.6;
   transition: 0.5s;
+}
+
+/* sessão Journal */
+.journal__textos {
+  color: var(--cor--padrao);
+  text-align: center;
+  padding: 1%;
+}
+.fotos__journal {
+  width: 90%;
+  border-radius: 7px;
 }
