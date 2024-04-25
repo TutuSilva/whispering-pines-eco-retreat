@@ -125,6 +125,15 @@
   .semioverlay:hover .texto__escondido__overlay {
     overflow: hidden;
   }
+  /*sessao mapas*/
+  .informacoes__mapa {
+    text-align: center;
+  }
+  .mapbox > iframe {
+    border: none;
+    width: 30%;
+    height: 35vh;
+  }
 }
 
 /* telas grandes  */
@@ -185,7 +194,17 @@
     flex-direction: row;
     gap: 0px;
   }
-  .fotos__journal, .semioverlay  {
+  .fotos__journal,
+  .semioverlay {
     width: 50%;
+  }
+  /*sessao mapas*/
+  .informacoes__mapa {
+    text-align: center;
+  }
+  .mapbox > iframe {
+    border: none;
+    width: 30%;
+    height: 35vh;
   }
 }

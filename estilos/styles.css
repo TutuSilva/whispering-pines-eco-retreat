@@ -10,6 +10,9 @@
   font-family: Spartan-Medium;
   src: url(../fonts/Spartan-Medium.ttf);
 }
+* {
+  box-sizing: border-box;
+}
 :root {
   --fonte--nav: Spartan-Light;
   --fonte--paragrafo: Spartan-Medium;
@@ -165,3 +168,29 @@ label span:nth-child(3) {
   align-items: center;
 }
 
+/* localizacao  */
+.contatos__textos {
+  color: var(--cor--padrao);
+  text-align: center;
+  padding: 1%;
+}
+.informacoes__mapa {
+  color: var(--cor--padrao);
+  padding: 1%;
+  width: 50%;
+  font-family: var(--fonte--paragrafo);
+  font-weight: var(--peso--paragrafo);
+  word-wrap: break-word;
+
+}
+/* mapa  */
+.mapbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mapbox > iframe {
+  border: none;
+  width: 50%;
+  height: 35vh;
+}
