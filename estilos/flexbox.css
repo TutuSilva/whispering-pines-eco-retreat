@@ -90,6 +90,13 @@
   transition: 0.5s;
   overflow: scroll;
 }
+/* mapa  */
+.mapbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* Medium screens (tablets) */
 @media (min-width: 768px) {
   /* background header  */
@@ -129,10 +136,16 @@
   .informacoes__mapa {
     text-align: center;
   }
+  /* mapa  */
+  .mapbox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+  }
   .mapbox > iframe {
     border: none;
-    width: 30%;
-    height: 35vh;
+    height: 30vh;
   }
 }
 
@@ -199,12 +212,23 @@
     width: 50%;
   }
   /*sessao mapas*/
+  .contatos__textos {
+    padding: 0;
+    margin: 0;
+  }
   .informacoes__mapa {
     text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  /* mapa  */
+  .mapbox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
   }
   .mapbox > iframe {
     border: none;
-    width: 30%;
-    height: 35vh;
+    height: 30vh;
   }
 }
