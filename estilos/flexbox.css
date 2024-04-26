@@ -20,7 +20,6 @@
 }
 
 /* sessao titulo e texto */
-
 .titulosite__container {
   display: flex;
   flex-direction: column;
@@ -55,7 +54,7 @@
   width: 80%;
   height: 100%;
   opacity: 0;
-  color: white;
+  color: whitesmoke;
   text-align: center;
 }
 
@@ -96,6 +95,75 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+/* formulario */
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+}
+.form .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Small devices lanscape(tablets, 768px and up) */
+@media screen and (min-width: 48em) and (orientation: landscape) {
+  /* sessao cabecalho  */
+  .cabecalho__container {
+    padding: 1% 5% 0 5%;
+  }
+  /* sessao apresentacao  */
+  .imagens__apresentacao__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 33px;
+  }
+  .fotos__efeito {
+    width: 45%;
+  }
+  .overlay {
+    width: 45%;
+    overflow: scroll;
+  }
+
+  /* sessão Journal */
+  .imagens__journal__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+  }
+  .semioverlay {
+    overflow: scroll;
+    width: 45%;
+  }
+  .semioverlay:hover {
+    overflow: scroll;
+  }
+  /* mapa  */
+  .mapbox {
+    flex-direction: row;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+  }
+  .informacoes__mapa {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .form {
+    width: 80%;
+  }
 }
 /* Medium screens (tablets) */
 @media (min-width: 768px) {
