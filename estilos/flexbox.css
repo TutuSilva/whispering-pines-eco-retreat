@@ -96,7 +96,7 @@
   justify-content: center;
   align-items: center;
 }
-/* formulario */
+
 .form {
   position: relative;
   display: flex;
@@ -108,6 +108,35 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+/* Smaller devices lanscape 666px and up*/
+@media screen and (min-width: 41.625em) and (orientation: landscape) {
+  /* sessao apresentacao  */
+  .imagens__apresentacao__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 33px;
+  }
+  .fotos__efeito {
+    width: 45%;
+  }
+  .overlay {
+    overflow: scroll;
+  }
+  /* sessão Journal */
+  .imagens__journal__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+  }
+  .form {
+    width: 80%;
+  }
 }
 
 /* Small devices lanscape(tablets, 768px and up) */
@@ -129,7 +158,6 @@
     width: 45%;
   }
   .overlay {
-    width: 45%;
     overflow: scroll;
   }
 
@@ -143,16 +171,19 @@
   }
   .semioverlay {
     overflow: scroll;
-    width: 45%;
   }
   .semioverlay:hover {
     overflow: scroll;
   }
   /* mapa  */
-  .mapbox {
+  .contatos__container {
+    display: flex;
     flex-direction: row;
-    align-items: center;
-    text-align: start;
+    flex-wrap: wrap;
+  }
+  .contatos__textos {
+    padding: 0;
+    margin: 0;
     width: 100%;
   }
   .informacoes__mapa {
@@ -162,7 +193,7 @@
     align-items: flex-start;
   }
   .form {
-    width: 80%;
+    width: 60%;
   }
 }
 /* Medium screens (tablets) */
@@ -254,6 +285,7 @@
   .imagens__apresentacao__container {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     gap: 0px;
     width: 85%;
   }
@@ -278,6 +310,11 @@
   .fotos__journal,
   .semioverlay {
     width: 50%;
+    overflow: hidden;
+  }
+  .fotos__journal:hover,
+  .semioverlay:hover {
+    overflow: hidden;
   }
   /*sessao mapas*/
   .contatos__textos {
@@ -297,6 +334,10 @@
   }
   .mapbox > iframe {
     border: none;
-    height: 30vh;
+    height: 50vh;
+  }
+  /* formulario  */
+  .form {
+    width: 35%;
   }
 }
