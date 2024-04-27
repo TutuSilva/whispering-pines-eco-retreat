@@ -16,13 +16,17 @@
       <!--Sessao menu desktop -->
       <header class="cabecalho__desktop__container">
         <nav class="navegacao__items">
-          <a class="navegacao__links" href="">ABOUT US</a>
+          <a class="navegacao__links" href="#aboutUs">ABOUT US</a>
         </nav>
         <nav class="navegacao__items">
-          <a class="navegacao__links" href="">EXPLORE</a>
+          <a class="navegacao__links" href="#aboutUsImg">EXPLORE</a>
         </nav>
         <nav class="navegacao__items">
-          <a class="navegacao__links" href="">
+          <a
+            class="navegacao__links"
+            href="https://github.com/TutuSilva/whispering-pines-eco-retreat/tree/main"
+            target="_blank"
+          >
             <img
               src="media/logowebiste/arvore-de-natal.png"
               alt="Arvore de natal logo branco"
@@ -30,17 +34,21 @@
           </a>
         </nav>
         <nav class="navegacao__items">
-          <a class="navegacao__links" href="">JOURNAL</a>
+          <a class="navegacao__links" href="#journal">JOURNAL</a>
         </nav>
         <nav class="navegacao__items">
-          <a class="navegacao__links" href="">SEARCH</a>
+          <a class="navegacao__links" href="#foundUs">FIND US</a>
         </nav>
       </header>
 
       <!--Sessao do menu hamborguinho-->
       <header class="cabecalho__container">
         <nav class="navegacao__items">
-          <a class="navegacao__links" href="">
+          <a
+          target="_blank"
+            class="navegacao__links"
+            href="https://github.com/TutuSilva/whispering-pines-eco-retreat/tree/main" 
+          >
             <img
               src="media/logowebiste/arvore-de-natal.png"
               alt="Arvore de natal logo branco"
@@ -60,16 +68,16 @@
           </label>
           <div id="menuzinho__items">
             <nav class="navegacao__items">
-              <a class="navegacao__links" href="">ABOUT US</a>
+              <a class="navegacao__links" href="#aboutUs">ABOUT US</a>
             </nav>
             <nav class="navegacao__items">
-              <a class="navegacao__links" href="">EXPLORE</a>
+              <a class="navegacao__links" href="#aboutUsImg">EXPLORE</a>
             </nav>
             <nav class="navegacao__items">
-              <a class="navegacao__links" href="">JOURNAL</a>
+              <a class="navegacao__links" href="#journal">JOURNAL</a>
             </nav>
             <nav class="navegacao__items">
-              <a class="navegacao__links" href="">SEARCH</a>
+              <a class="navegacao__links" href="#foundUs">SEARCH</a>
             </nav>
           </div>
         </div>
@@ -83,7 +91,7 @@
     </div>
 
     <!--sessao de apresentação-->
-    <section class="apresentacao__container">
+    <section class="apresentacao__container" id="aboutUs">
       <div class="textos__apresentacao">
         <h2 class="textos__subtitulo">
           Experience the power of nature's silence
@@ -99,7 +107,7 @@
           coffee on your cabin's porch.
         </p>
       </div>
-      <div class="imagens__apresentacao__container">
+      <div class="imagens__apresentacao__container" id="aboutUsImg">
         <div class="fotos__efeito">
           <img
             class="fotos__apresentacao"
@@ -152,7 +160,7 @@
     </section>
 
     <!--sessão Journal-->
-    <section class="journal__container">
+    <section class="journal__container" id="journalID">
       <div class="journal__textos">
         <h2 class="textos__subtitulo">The Journal</h2>
         <p class="textos__paragrafos">
@@ -203,7 +211,7 @@
     </section>
 
     <!--sessao contatos-->
-    <section class="contatos__container">
+    <section class="contatos__container" id="foundUs">
       <div class="contatos__textos">
         <h2 class="textos__subtitulo">How to find us</h2>
       </div>
@@ -219,7 +227,7 @@
           <p>+88(99) 202 000</p>
         </div>
         <iframe
-        class="iframe__mapa"
+          class="iframe__mapa"
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10396.920955079362!2d-122.84029972190979!3d49.34779067143376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1714072295388!5m2!1spt-BR!2sbr"
           allowfullscreen=""
           loading="lazy"
@@ -230,7 +238,6 @@
 
     <!-- sessao formulario-->
     <section class="form__container">
-      
       <form class="form">
         <div class="title">Contact us</div>
         <input type="text" placeholder="Your email" class="input" required />
@@ -239,6 +246,10 @@
       </form>
     </section>
 
+    <!-- footer  -->
+    <footer>
+      <p>Made with &#9825; in Minas Gerais, Brazil.</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

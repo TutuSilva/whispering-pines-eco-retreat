@@ -188,7 +188,7 @@ label span:nth-child(3) {
   width: 90%;
   height: 35vh;
   margin: 5%;
-  }
+}
 /* formulario  */
 .form__container {
   display: flex;
@@ -249,8 +249,14 @@ label span:nth-child(3) {
   border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
-  background-color: #1A4D2E;
+  background-color: #1a4d2e;
   color: #fff;
   cursor: pointer;
   font-family: var(--fonte--paragrafo);
+}
+/* footer  */
+footer {
+  text-align: center;
+  font-family: var(--fonte--paragrafo);
+  color: rgba(255, 255, 255, 0.308);
 }
