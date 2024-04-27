@@ -195,6 +195,7 @@ label span:nth-child(3) {
   justify-content: center;
   background-image: url(../media/backgroundfooter/footer.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   padding: 10%;
 }
